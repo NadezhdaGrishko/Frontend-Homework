@@ -1,0 +1,250 @@
+body {
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	padding: 0; /*чтобы не было отступов*/
+	margin: 0; /*чтобы не было отступов*/
+
+}
+
+div, p, input, a, ul, li, button, form, span {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	background-image: linear-gradient(to right bottom, #4ebefe, #47b2f5, #40a6ec, #3b9be3, #378fd9);
+	padding-top: 62px;
+	padding-bottom: 72px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between; /*чтобы элементы прилегали к краю контейнера*/
+	align-items: center;
+}
+
+.offer {
+	}
+
+.title {
+	/*font-family: 'Ubuntu', sans-serif;*/
+	font-size: 37px;
+	line-height: 49px;
+	letter-spacing: 0.02em;
+	width: 560px;
+}
+
+.title span {
+	font-size: 59px;
+	line-height: 73px;
+}
+
+.aim {
+	margin-top: 48px;
+	margin-bottom: 45px;
+	width: 412px;
+	letter-spacing: 0.2em;
+	line-height: 27px;
+	letter-spacing: 0.02em;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #ffd429;
+	color: #2e2a1b;
+	font-size: 15px;
+	width: 222px;
+	height: 56px;
+	display: block;
+	padding-top: 20px;
+	text-align: center;
+	text-decoration: none; /*убираем подчёркивание кнопки*/
+	transition: all 0.5s ease; /*плавное изменение при наведении*/
+}
+
+.btn:hover {
+	background: #edbd00;
+}
+
+.travel {
+	margin-top: 10px;
+}
+
+.next {
+	padding-top: 110px;
+	padding-bottom: 120px;
+}
+
+h2 {
+	font-size: 30px;
+	letter-spacing: 0.02em;
+	line-height: 25px;
+	color: #201b2d;
+	text-align: center;
+}
+
+.futures {
+	color: #201b2d;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+.future {
+	text-align: center;
+	background: url('../img/freetime.jpg') no-repeat center top;
+	padding-top: 88px;
+	width: 290px;
+}
+
+.future-text {
+	margin-top: 17px;
+	font-size: 15px;
+	line-height: 22px;
+	/*width: 274px;*/
+	margin-bottom: 0;
+}
+.future-travel {
+	background: url('../img/brighttravel.jpg') no-repeat center top;
+	width: 260px;
+}
+
+.future-value {
+	background: url('../img/createvalue.jpg') no-repeat center top;
+	width: 300px;
+}
+
+.ticket {
+	padding-top: 105px;
+	padding-bottom: 102px;
+	background: #ecf3f8;
+}
+
+.form {
+	margin-top: 55px;
+	text-align: center;
+}
+
+input {
+	display: block;
+	margin: 0 auto;
+	width: 340px;
+	height: 46px;
+	border: 1px solid #bbbbbb;
+	border-radius: 3px;
+	padding-left: 25px;
+	margin-bottom: 15px;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #201b2d;
+	line-height: 25px;
+	letter-spacing: 0.02em;
+}
+
+.btn-form {
+	border: 0;
+	padding-top: 0;
+	width: 340px;
+	cursor: pointer; /*чтобы при наведении мышка оставалась*/
+	margin: 0 auto;
+}
+
+.footer {
+	padding-top: 62px;
+	padding-bottom: 62px;
+	text-align: center;
+	background-color: #164d7a;
+}
+
+.credits {
+	font-size: 14px;
+	margin: 0; 
+}
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+	.travel {
+		display: block;
+		width: 450px;
+		height: 450px;
+		margin: 72px auto 0;
+	}
+	.offer {
+		margin-top: 90px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.travel {
+		display: block;
+		width: 549px;
+		height: auto;
+		margin: 52px auto 0;
+	}
+	.aim {
+		width: 580px;
+	}
+	.futures {
+		flex-direction: column;
+	}
+	.future {
+		width: auto;
+		margin-bottom: 30px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.aim {
+		width: 100%;
+	}
+	.travel {
+		width: 100%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.title {
+		width: 100%;
+	}
+	input {
+		width: 100%;
+		padding-left: 15px;
+	}
+	.btn-form {
+		width: 100%;
+	}
+}

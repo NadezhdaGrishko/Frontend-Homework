@@ -1,0 +1,97 @@
+селектор {
+	свойство: значение;
+	свойство: значение;
+	свойство: значение;
+	...
+	свойство: значение;
+}
+
+/* шрифт, альтернативный шрифт, группа шрифтов 
+обращение по тегу, тк боди один на весь документ */
+body {
+	font-family: Arial, Tachoma, sans-serif;
+	color: black;
+	font-size: 20px;
+}
+
+h1 {
+	color: red;
+	border: 2px solid red;
+	background: blue;
+}
+
+h2 {
+	color: white;
+	border: 6px solid red;
+	background: lightgreen;
+	width: 400px;
+	height: 100px;
+}
+
+div, p, span, form, li, input, button, a {
+	box-sizing: border-box;	
+}
+
+.block {
+	font-size: 15px;
+	background: #e5ff56;
+	height: 300px;
+	width: 300px;
+	color: #fff;
+	padding: 20px 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 5px solid blue;
+	opacity: 1;
+	display: block;
+}
+	/*
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	padding-left: 40px;
+	*/
+	a {
+		display: block;
+	}
+
+/*Если свойство составное, тогда 
+top,bottom: 10px; 
+left, right: 30px;
+*/
+
+/*псевдо класс- работает при наведении*/
+.block:hover {
+	opacity: 0.5;
+}
+
+
+p.new1 {
+	margin: 10px 0;
+	line-height: 1.5em;
+	letter-spacing: 0.5em;
+}
+
+.new {
+	color: red;
+}
+
+p.new {
+	color: red;
+	background: #1D67A4;
+	border-color: #fff;
+	outline-color: rgb(150,90,60);
+
+}
+
+.new1 span {
+	color: blue;
+}
+
+#block {
+	background: yellow;
+}
+
+ul.list {
+	color: pink;
+}
